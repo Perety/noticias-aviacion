@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aviación Militar - Aviones de 6ª Generación</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,600">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: #f1f1f1;
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+    }
+
+    header {
+      background: linear-gradient(to bottom, #111, #0a0a0a);
+      text-align: center;
+      padding: 80px 20px 60px;
+      border-bottom: 2px solid #00bfff;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #00bfff;
+      text-shadow: 0 0 20px #00bfff55;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+    }
+
+    .plane-card {
+      background-color: #161616;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .plane-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 25px rgba(0,191,255,0.2);
+    }
+
+    .plane-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .plane-info {
+      padding: 20px;
+    }
+
+    .plane-info h3 {
+      color: #00bfff;
+      margin-top: 0;
+      font-size: 18px;
+    }
+
+    .plane-info p {
+      color: #bbb;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .btn-container a {
+      background: #00bfff;
+      color: #fff;
+      padding: 12px 28px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn-container a:hover {
+      background: #0099cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 16px;
+      color: #888;
+      border-top: 1px solid #222;
+      margin-top: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aviones de 6ª Generación</h1>
+    <p>Los proyectos más avanzados de la aviación militar mundial</p>
+  </header>
+
+  <div class="content">
+    <div class="planes-grid">
+
+      <div class="plane-card">
+        <img src="F-47-artist-rendition_(cropped).jpg" alt="NGAD - EE.UU.">
+        <div class="plane-info">
+          <h3>NGAD (EE.UU.)</h3>
+          <p>El programa estadounidense de Dominio Aéreo de Nueva Generación busca reemplazar al F-22 Raptor con un caza modular y autónomo.</p>
+        </div>
+      </div>
+
+      <div class="plane-card">
+        <img src="GCAP_logo.jpg" alt="Tempest - Reino Unido">
+        <div class="plane-info">
+          <h3>Tempest / GCAP (Reino Unido, Italia, Japón)</h3>
+          <p>Un proyecto tripartito que integra IA, sigilo avanzado y sensores cooperativos para formar un ecosistema aéreo conectado.</p>
+        </div>
+      </div>
+
+      <div class="plane-card">
+        <img src="FCAS Poster GOOSE_Janes-Magazin_PRINT.jpeg" alt="FCAS - Europa">
+        <div class="plane-info">
+          <h3>FCAS (Francia, Alemania, España)</h3>
+          <p>El futuro sistema de combate aéreo europeo busca integrar cazas tripulados con enjambres de drones y control remoto avanzado.</p>
+        </div>
+      </div>
+
+      <div class="plane-card">
+        <img src="TAI-TFX-KAAN-2-jpg.jpeg" alt="TF-X Kaan - Turquía">
+        <div class="plane-info">
+          <h3>TF-X Kaan (Turquía)</h3>
+          <p>El caza turco de próxima generación incorpora materiales compuestos, radar AESA y aviónica desarrollada localmente.</p>
+        </div>
+      </div>
+
+      <div class="plane-card">
+        <img src="Checkmate-Su-75-il-1.webp" alt="Su-75 Checkmate - Rusia">
+        <div class="plane-info">
+          <h3>Su-75 “Checkmate” (Rusia)</h3>
+          <p>Diseñado para exportación, promete capacidades de sigilo a menor costo, enfocado en misiones tácticas ligeras.</p>
+        </div>
+      </div>
+
+      <div class="plane-card">
+        <img src="AMCA-aircraft.jpg" alt="HAL AMCA - India">
+        <div class="plane-info">
+          <h3>HAL AMCA (India)</h3>
+          <p>El programa de combate avanzado indio busca posicionar a la India entre las potencias aéreas tecnológicamente más avanzadas.</p>
+        </div>
+      </div>
+
+      <div class="plane-card">
+        <img src="432x243_cmsv2_81c3f71a-c7d1-5ffa-ab8e-e10169080099-9079648.webp" alt="KF-21 Boramae - Corea del Sur">
+        <div class="plane-info">
+          <h3>KF-21 Boramae (Corea del Sur)</h3>
+          <p>Desarrollado por KAI, el Boramae combina innovación local y cooperación internacional con Indonesia.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="btn-container">
+      <a href="noticias.html"><i class="fa fa-newspaper-o"></i> Ver Noticias</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 — Aviación Militar de Sexta Generación</p>
+  </footer>
+
+</body>
+</html>
