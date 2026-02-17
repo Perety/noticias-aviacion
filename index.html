@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroEvolution | El Arte de la Aviación Militar</title>
+    <link rel="stylesheet" href="aviacion_bonito.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">AERO_GALLERY</div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="helice.html"> Hélice</a>
+            <a href="reaccion.html"> Reacción</a>
+            <a href="futuro.html"> Futuro</a>
+        </div>
+    </nav>
+
+    <header class="hero-index">
+        <div class="hero-card">
+            <h1>AIR FORCE<br>EVOLUTION</h1>
+            <p style="font-size: 1.2rem; max-width: 650px; margin: 0 auto 40px; color: #475569;">
+                Ingeniería extrema y dominio del espacio aéreo. 
+                Explora las máquinas que rompieron la barrera del sonido y definieron el futuro del combate.
+            </p>
+            
+            <a href="#explorar" class="btn-militar"> INICIAR SECUENCIA</a>
+        </div>
+    </header>
+
+    <section class="container" id="explorar" style="text-align: center; padding-top: 80px;">
+        <h2 style="font-size: 3rem; color: #1e293b; font-weight: 800; margin-bottom: 20px;">La Evolución del Caza</h2>
+        <p style="max-width: 800px; margin: 0 auto; color: #64748b; font-size: 1.15rem; line-height: 1.8;">
+            La aviación militar ha avanzado más en los últimos 80 años que cualquier otra tecnología. 
+            Lo que comenzó como máquinas de madera y lona, hoy son centros de datos invisibles al radar que vuelan a más de 2.500 km/h.
+        </p>
+    </section>
+
+    <section class="container" style="margin-top: 60px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 35px;">
+            
+            <div class="plane-card">
+                <img src="https://imgs.search.brave.com/G1TlcI9HAAKiZo4_r-3gXAA7AufxMP7hXGAlFI-nOYc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJiYXQuY29t/L2ltZy84NjcxNDI4/LWVkdWFyZC1ta2l4/Yy5qcGc" class="plane-img" alt="Aviación hélice">
+                <div class="plane-info">
+                    <h3>Era Mecánica</h3>
+                    <p>El rugido de los motores de pistón y la elegancia del Spitfire.</p>
+                    <a href="helice.html" class="btn-militar" style="padding: 10px 25px; font-size: 0.8rem;"> VER CLÁSICOS</a>
+                </div>
+            </div>
+
+            <div class="plane-card">
+                <img src="https://imgs.search.brave.com/dWT3QlUFbSUJO8Yho1lAKE40xw449UYf9TVUrMeb05s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9saXZl/LnN0YXRpY2ZsaWNr/ci5jb20vNjU1MzUv/NTMwNjkzMzYzNDNf/MzA0ZjRiZDc3MV9i/LmpwZw" class="plane-img" alt="Aviación reacción">
+                <div class="plane-info">
+                    <h3>Era del Jet</h3>
+                    <p>La llegada del sigilo, el postquemador y la superioridad aérea.</p>
+                    <a href="reaccion.html" class="btn-militar" style="padding: 10px 25px; font-size: 0.8rem;"> VER MODERNOS</a>
+                </div>
+            </div>
+
+            <div class="plane-card">
+                <img src="https://imgs.search.brave.com/TPGJ_LfX2KzS-ISB0nL16RfS_QCgLBHZCm5tRffUc9s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS52YW5kYWxzcG9y/dHMuY29tL2kvNjQw/eDM2MC8xMC0yMDI1/LzIwMjUxMDE0MjAz/MTE5XzEuanBn" class="plane-img" alt="Aviación futura">
+                <div class="plane-info">
+                    <h3>Era Digital</h3>
+                    <p>IA, enjambres de drones y la sexta generación de combate.</p>
+                    <a href="futuro.html" class="btn-militar" style="padding: 10px 25px; font-size: 0.8rem;"> VER PROYECTOS</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p style="margin-bottom: 10px;">Público destinatario: Jóvenes apasionados por la tecnología y la historia aeronáutica.</p>
+        <p>Referencia visual basada en la <a href="https://nicepage.com/html-templates" target="_blank">plantilla Aero-Glass</a> de diseño moderno.</p>
+        <p style="margin-top: 20px; font-weight: bold;">© 2026 AeroEvolution - [Tu Nombre]</p>
+    </footer>
+
+    <script>
+        // Efecto de elevación extra para las tarjetas al pasar el ratón
+        document.querySelectorAll('.plane-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-15px)';
+                card.style.transition = '0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+
+</body>
+</html>
